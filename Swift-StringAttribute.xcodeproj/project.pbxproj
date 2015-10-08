@@ -14,6 +14,11 @@
 		102AB6861BC6AF0D007433DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102AB6841BC6AF0D007433DC /* LaunchScreen.storyboard */; };
 		102AB6911BC6AF0D007433DC /* Swift_StringAttributeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102AB6901BC6AF0D007433DC /* Swift_StringAttributeTests.swift */; };
 		102AB69C1BC6AF0D007433DC /* Swift_StringAttributeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102AB69B1BC6AF0D007433DC /* Swift_StringAttributeUITests.swift */; };
+		102AB6AD1BC6AF2D007433DC /* StringAttributeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102AB6AA1BC6AF2D007433DC /* StringAttributeProtocol.swift */; settings = {ASSET_TAGS = (); }; };
+		102AB6AE1BC6AF2D007433DC /* NSMutableAttributedString+StringAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102AB6AB1BC6AF2D007433DC /* NSMutableAttributedString+StringAttribute.swift */; settings = {ASSET_TAGS = (); }; };
+		102AB6AF1BC6AF2D007433DC /* StringAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102AB6AC1BC6AF2D007433DC /* StringAttribute.swift */; settings = {ASSET_TAGS = (); }; };
+		102AB6B21BC6AF4D007433DC /* FontAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102AB6B01BC6AF4D007433DC /* FontAttribute.swift */; settings = {ASSET_TAGS = (); }; };
+		102AB6B31BC6AF4D007433DC /* ForegroundColorAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102AB6B11BC6AF4D007433DC /* ForegroundColorAttribute.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		102AB6971BC6AF0D007433DC /* Swift-StringAttributeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-StringAttributeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		102AB69B1BC6AF0D007433DC /* Swift_StringAttributeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_StringAttributeUITests.swift; sourceTree = "<group>"; };
 		102AB69D1BC6AF0D007433DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		102AB6AA1BC6AF2D007433DC /* StringAttributeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringAttributeProtocol.swift; sourceTree = "<group>"; };
+		102AB6AB1BC6AF2D007433DC /* NSMutableAttributedString+StringAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+StringAttribute.swift"; sourceTree = "<group>"; };
+		102AB6AC1BC6AF2D007433DC /* StringAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringAttribute.swift; sourceTree = "<group>"; };
+		102AB6B01BC6AF4D007433DC /* FontAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAttribute.swift; sourceTree = "<group>"; };
+		102AB6B11BC6AF4D007433DC /* ForegroundColorAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForegroundColorAttribute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,9 @@
 			children = (
 				102AB67B1BC6AF0D007433DC /* AppDelegate.swift */,
 				102AB67D1BC6AF0D007433DC /* ViewController.swift */,
+				102AB6A91BC6AF18007433DC /* StringAttribute */,
+				102AB6B01BC6AF4D007433DC /* FontAttribute.swift */,
+				102AB6B11BC6AF4D007433DC /* ForegroundColorAttribute.swift */,
 				102AB67F1BC6AF0D007433DC /* Main.storyboard */,
 				102AB6821BC6AF0D007433DC /* Assets.xcassets */,
 				102AB6841BC6AF0D007433DC /* LaunchScreen.storyboard */,
@@ -123,6 +136,16 @@
 				102AB69D1BC6AF0D007433DC /* Info.plist */,
 			);
 			path = "Swift-StringAttributeUITests";
+			sourceTree = "<group>";
+		};
+		102AB6A91BC6AF18007433DC /* StringAttribute */ = {
+			isa = PBXGroup;
+			children = (
+				102AB6AA1BC6AF2D007433DC /* StringAttributeProtocol.swift */,
+				102AB6AB1BC6AF2D007433DC /* NSMutableAttributedString+StringAttribute.swift */,
+				102AB6AC1BC6AF2D007433DC /* StringAttribute.swift */,
+			);
+			name = StringAttribute;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +279,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				102AB67E1BC6AF0D007433DC /* ViewController.swift in Sources */,
+				102AB6AD1BC6AF2D007433DC /* StringAttributeProtocol.swift in Sources */,
+				102AB6AE1BC6AF2D007433DC /* NSMutableAttributedString+StringAttribute.swift in Sources */,
+				102AB6B31BC6AF4D007433DC /* ForegroundColorAttribute.swift in Sources */,
 				102AB67C1BC6AF0D007433DC /* AppDelegate.swift in Sources */,
+				102AB6AF1BC6AF2D007433DC /* StringAttribute.swift in Sources */,
+				102AB6B21BC6AF4D007433DC /* FontAttribute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
